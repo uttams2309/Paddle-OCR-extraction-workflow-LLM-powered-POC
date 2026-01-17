@@ -1,0 +1,13 @@
+ocr:
+  use_gpu: false             # Set to true if you have CUDA installed
+  lang: "en"                 # Language code
+  cls: true                  # Use angle classifier (rotation detection)
+
+llm:
+  model: "gpt-4o"            # Or "gpt-3.5-turbo", "claude-3-sonnet"
+  temperature: 0.0
+  max_tokens: 1000
+
+paths:
+  input_dir: "data/raw_documents"
+  output_dir: "data/output_json"
